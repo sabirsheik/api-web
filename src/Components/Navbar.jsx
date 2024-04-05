@@ -40,9 +40,6 @@ const Navbar = () => {
         </li>
       </ul>
     </div>
-      <form class="d-flex" role="search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
   </div>
 </nav>
     </>
