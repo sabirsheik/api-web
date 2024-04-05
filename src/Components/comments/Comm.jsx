@@ -34,8 +34,9 @@ const Comm = () => {
       ) : error ? (
         <div>Error: {error}</div>
       ) : (
-        <div className='box-comm d-flex justify-content-center flex-wrap mt-5 gap-5'>
-          <h1 className='text-center'>Comments</h1>
+        <div className="container">
+         <h1 className='text-center'>Comments</h1>
+         <div className='box-comm d-flex justify-content-center flex-wrap mt-5 gap-5'>
           {comments.map(comm =>
             <div className="card" style={{width: "20rem"}}  key={comm.id}>
             <div className="card-body">
@@ -46,6 +47,7 @@ const Comm = () => {
           </div>
           )}
         </div>
+       </div>
       )}
     </>
   );

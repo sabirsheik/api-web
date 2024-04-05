@@ -35,8 +35,9 @@ const Posts = () => {
       ) : error ? (
         <div>Error: {error}</div>
       ) : (
+        <div className="container">
+            <h1 className='text-center'>Posts</h1>
         <div className='container d-flex flex-wrap justify-content-evenly m-3 gap-3'>
-          <h1 className='text-center'>Posts</h1>
           {users.map(user =>
             <div className="card" key={user.id} style={{ width: "18rem" }}>
               <div className="card-body">
@@ -46,6 +47,7 @@ const Posts = () => {
               </div>
             </div>
           )}
+        </div>
         </div>
       )}
     </>

@@ -35,8 +35,9 @@ const Todos = () => {
       ) : error ? (
         <div>Error: {error}</div>
       ) : (
+         <div className="container">
+           <h1 className='text-center'>Todos</h1>
         <div className='container d-flex justify-content-center  gap-3 m-4 flex-wrap'>
-          <h1 className='text-center'>Todos</h1>
 
           <ul>
           {todos.map(todo =>
@@ -44,6 +45,7 @@ const Todos = () => {
           )}
           </ul>
         </div>
+         </div>
       )}
     </>
   );

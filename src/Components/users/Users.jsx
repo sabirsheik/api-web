@@ -35,8 +35,9 @@ const Users = () => {
       ) : error ? (
         <div>Error: {error}</div>
       ) : (
-        <div className='container d-flex justify-content-center  gap-3 m-4 flex-wrap'>
+        <div className="container">
           <h1 className='text-center'>Users</h1>
+          <div className='container d-flex justify-content-center  gap-3 m-4 flex-wrap'>
           {users.map(user =>
             <ul className="list-group" key={user.id}>
             <li className="list-group-item"><h5>{user.name}</h5></li>
@@ -51,6 +52,7 @@ const Users = () => {
           </ul>
           )}
          
+        </div>
         </div>
       )}
     </>
