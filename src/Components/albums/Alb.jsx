@@ -36,6 +36,7 @@ const Alb = () => {
         <div>Error: {error}</div>
       ) : (
         <div className='container'>
+          <h1 className='text-center'>Albums</h1>
           {albums.map(alb =>
            <h6 key={alb.id}> {alb.id} {alb.title}</h6>
           )}

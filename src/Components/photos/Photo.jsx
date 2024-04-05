@@ -36,6 +36,7 @@ const Photo = () => {
         <div>Error: {error}</div>
       ) : (
         <div className='container d-flex justify-content-center  gap-3 m-4 flex-wrap'>
+          <h1 className='text-center'>Photos</h1>
           {photos.map(photo =>
           <div className="card" style={{width:"300px"}} key={photo.id}>
           <img src={photo.url} className="card-img-top" alt="..." />
